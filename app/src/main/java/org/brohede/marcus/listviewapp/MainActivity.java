@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
-                Toast.makeText(getApplicationContext(), "Alps", Toast.LENGTH_LONG).show();
+                Toast.makeText(getApplicationContext(), mountainNames[position]+" is in the "+mountainLocations[position]+" category and has a height of "+Integer.toString(mountainHeights[position])+"m", Toast.LENGTH_LONG).show();
             }
         });
 
